@@ -1,0 +1,26 @@
+﻿@model List<Infinte.MVC.Day1.Models.Products>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of Products</h2>
+<hr/>
+<table class="table">
+    <tr>
+        <th>Id</th> 
+        <th>ProductName</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+
+    @foreach (var c in Model)
+    {
+        <tr>
+            <td>@c.Id</td>
+        <td>@c.ProductName</td>
+        <td>@c.Price</td>
+        <td>@c.Quantity</td>
+        </tr>
+    }
+</table>
+
